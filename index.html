@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FulxQR – Modern QR Automation SaaS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- TOP GRADIENT BACKDROP -->
+  <div class="bg-gradient"></div>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav-left">
+      <div class="logo-circle">FQ</div>
+      <div>
+        <div class="logo-text">FulxQR</div>
+        <div class="logo-tagline">Scan • Automate • Grow</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#industries">Industries</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#demo">Demo</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Book a Free Demo
+    </button>
+    <button class="nav-menu-btn" id="navMenuBtn">☰</button>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home" onclick="closeMobileNav()">Home</a>
+    <a href="#features" onclick="closeMobileNav()">Features</a>
+    <a href="#industries" onclick="closeMobileNav()">Industries</a>
+    <a href="#pricing" onclick="closeMobileNav()">Pricing</a>
+    <a href="#demo" onclick="closeMobileNav()">Demo</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="section hero">
+      <div class="hero-left glass">
+        <p class="badge">New · QR-based SaaS for Offline Businesses</p>
+        <h1>
+          Turn Offline Customers<br />
+          into <span class="highlight">Instant Leads</span> with FulxQR.
+        </h1>
+        <p class="hero-sub">
+          One smart QR for your business: scan → menu / details → WhatsApp → auto bill →
+          live location → lead saved.<br />
+          Perfect for gyms, property dealers, salons, doctors, restaurants & more.
+        </p>
+        <div class="hero-actions">
+          <button class="primary-btn" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">
+            View Pricing
+          </button>
+          <button class="ghost-btn" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">
+            Try Live Demo
+          </button>
+        </div>
+        <p class="mini-note">
+          ✅ 7 Days Free Trial · No subscription · One-time payment software.
+        </p>
+      </div>
+
+      <div class="hero-right glass">
+        <h3>FulxQR Snapshot</h3>
+        <ul class="hero-list">
+          <li>📱 QR → WhatsApp order & bill</li>
+          <li>👤 Auto lead capture & token system</li>
+          <li>📍 Customer live location (optional)</li>
+          <li>👨‍💼 Outlet / staff wise routing</li>
+          <li>📊 Basic analytics & order history</li>
+        </ul>
+        <div class="qr-preview">
+          <div class="qr-box">
+            <div class="qr-inner">QR</div>
+          </div>
+          <div class="qr-text">
+            <div class="qr-title">Property Dealer QR</div>
+            <p class="qr-desc">
+              Scan to view full property details, WhatsApp the dealer, and save your interest in one tap.
+            </p>
+          </div>
+        </div>
+        <p class="mini-note">Demo only – actual QR will be generated per client.</p>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section id="features" class="section">
+      <h2 class="section-title">Why FulxQR?</h2>
+      <p class="section-sub">
+        A single system that connects your QR, WhatsApp, billing and lead capture – designed for Indian businesses.
+      </p>
+
+      <div class="grid features-grid">
+        <div class="card glass">
+          <h3>QR to WhatsApp Automation</h3>
+          <p>
+            Customer scan kare → WhatsApp par auto formatted bill, order details & business info chala jaye.
+          </p>
+        </div>
+        <div class="card glass">
+          <h3>Lead & Token System</h3>
+          <p>
+            Every order or enquiry creates a unique token ID – easy for billing, kitchen, staff & customer tracking.
+          </p>
+        </div>
+        <div class="card glass">
+          <h3>Multi-Outlet & Staff Routing</h3>
+          <p>
+            Ek brand ke multiple outlets / riders / staff – jo accept karega usko order assign, baaki se auto hide.
+          </p>
+        </div>
+        <div class="card glass">
+          <h3>Customer Live Location</h3>
+          <p>
+            Optional location capture – delivery, property visits, home pick-up, on-site service ke liye perfect.
+          </p>
+        </div>
+        <div class="card glass">
+          <h3>One-Time SaaS</h3>
+          <p>
+            Monthly subscription nahi – one-time payment with 7-day free trial. Perfect for small & growing businesses.
+          </p>
+        </div>
+        <div class="card glass">
+          <h3>Custom Flows Per Industry</h3>
+          <p>
+            Gym trial, property lead, salon appointment, doctor's token, food order – sab ke liye alag-alag flows.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES SECTION -->
+    <section id="industries" class="section">
+      <h2 class="section-title">Industries We Power</h2>
+      <p class="section-sub">FulxQR is built for offline-first Indian businesses.</p>
+
+      <div class="grid industries-grid">
+        <div class="card glass">
+          <h3>🏠 Property Dealers</h3>
+          <p>
+            Property-wise QR: price, photos, EMI, location, interest form, WhatsApp & auto lead capture in one flow.
+          </p>
+        </div>
+        <div class="card glass">
+          <h3>🏋️‍♂️ Gyms & Fitness</h3>
+          <p>
+            Trial pass QR, membership enquiry, lead tracking, WhatsApp reminders & follow-up funnel.
+          </p>
+        </div>
+        <div class="card glass">
+          <h3>💇 Salons & Spas</h3>
+          <p>
+            QR-based price list, appointment booking, token numbers, feedback & membership plans.
+          </p>
+        </div>
+        <div class="card glass">
+          <h3>🍔 Restaurants & Cafés</h3>
+          <p>
+            Smart QR menu, add-to-cart system, WhatsApp bill, kitchen routing & pickup/delivery modes.
+          </p>
+        </div>
+        <div class="card glass">
+          <h3🩺>Doctors & Clinics</h3>
+          <p>
+            OPD token, patient basic details, WhatsApp reminders & visit history (non-medical admin only).
+          </p>
+        </div>
+        <div class="card glass">
+          <h3>🚗 Tours, Travel & Car Decor</h3>
+          <p>
+            Package/catalogue QR, enquiry capture, custom quote request & live location sharing when needed.
+          </p>
+        </div>
+        <div class="card glass">
+          <h3>🧵 Handlooms & Boutiques</h3>
+          <p>
+            Product catalog QR, WhatsApp purchase intent, custom order request & repeat customer tracking.
+          </p>
+        </div>
+        <div class="card glass">
+          <h3>➕ & Many More</h3>
+          <p>
+            Any business jahan customer phone use karta hai – wahan FulxQR kaam karega. Just plug & play.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section">
+      <h2 class="section-title">How FulxQR Works</h2>
+      <p class="section-sub">Simple for customers. Powerful for owners.</p>
+
+      <div class="steps">
+        <div class="step glass">
+          <div class="step-number">1</div>
+          <h3>Customer scans your QR</h3>
+          <p>Table, standee, poster, visiting card – anywhere.</p>
+        </div>
+        <div class="step glass">
+          <div class="step-number">2</div>
+          <h3>They select & confirm</h3>
+          <p>Menu, enquiry, property, appointment – custom per industry.</p>
+        </div>
+        <div class="step glass">
+          <div class="step-number">3</div>
+          <h3>WhatsApp message auto opens</h3>
+          <p>Pre-filled bill / enquiry goes to your business WhatsApp.</p>
+        </div>
+        <div class="step glass">
+          <div class="step-number">4</div>
+          <h3>You track & grow</h3>
+          <p>Tokens, order history, lead list & simple analytics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="section">
+      <h2 class="section-title">Pricing Plans</h2>
+      <p class="section-sub">One-time payment. 7 days free trial. No hidden fees.</p>
+
+      <div class="grid pricing-grid">
+        <div class="card glass pricing-card">
+          <p class="pricing-label">Starter</p>
+          <h3 class="pricing-price">₹5,999</h3>
+          <p class="pricing-note">One brand • Simple setup</p>
+          <ul class="pricing-list">
+            <li>Up to 3 smart QR flows</li>
+            <li>WhatsApp order/enquiry automation</li>
+            <li>Basic lead sheet export</li>
+            <li>Email & WhatsApp support</li>
+          </ul>
+        </div>
+
+        <div class="card glass pricing-card pricing-featured">
+          <p class="pricing-label">Growth</p>
+          <h3 class="pricing-price">₹9,999</h3>
+          <p class="pricing-note">Multi-outlet & staff routing</p>
+          <ul class="pricing-list">
+            <li>Up to 10 smart QR flows</li>
+            <li>Multi-outlet & staff routing</li>
+            <li>Auto token system</li>
+            <li>Industry-specific templates</li>
+          </ul>
+          <div class="tag-popular">Most Popular</div>
+        </div>
+
+        <div class="card glass pricing-card">
+          <p class="pricing-label">Pro Suite</p>
+          <h3 class="pricing-price">₹17,999</h3>
+          <p class="pricing-note">Agencies & serious brands</p>
+          <ul class="pricing-list">
+            <li>Unlimited QR flows</li>
+            <li>Custom branding & domains</li>
+            <li>Basic analytics dashboard</li>
+            <li>Priority onboarding & support</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="mini-note">
+        Need something custom (like only Property Dealers, or only Gym flow)? We can design a special package.
+      </p>
+    </section>
+
+    <!-- DEMO SECTION -->
+    <section id="demo" class="section">
+      <h2 class="section-title">Live Demo Ideas</h2>
+      <p class="section-sub">Use these example flows in your pitch & client demos.</p>
+
+      <div class="grid demo-grid">
+        <div class="card glass">
+          <h3>🏠 Property Dealer QR</h3>
+          <p>Scan → Property details → Interested → Lead auto-saved.</p>
+          <div class="demo-qr-box">QR</div>
+        </div>
+        <div class="card glass">
+          <h3>🍔 Restaurant QR</h3>
+          <p>Scan → Menu → Add to cart → WhatsApp order.</p>
+          <div class="demo-qr-box">QR</div>
+        </div>
+        <div class="card glass">
+          <h3>🏋️ Gym Trial QR</h3>
+          <p>Scan → Enter details → Get trial pass & WhatsApp confirmation.</p>
+          <div class="demo-qr-box">QR</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact & Demo</h2>
+      <p class="section-sub">
+       Want to use FulxQR for your business or agency? Send your details – we’ll reply on WhatsApp.
+      </p>
+
+      <div class="contact-layout">
+        <div class="card glass contact-info">
+          <h3>Talk to FulxQR Team</h3>
+          <p>We’ll help you design flows for:</p>
+          <ul>
+            <li>Property Dealers & Builders</li>
+            <li>Gym / Salon / Restaurant owners</li>
+            <li>Doctors, Clinics & more</li>
+          </ul>
+          <p class="mini-note">
+            You can also white-label the system for your own brand (agency model).
+          </p>
+        </div>
+
+        <form class="card glass contact-form" onsubmit="return handleContactSubmit(event)">
+          <label>
+            Your Name
+            <input type="text" id="contactName" required />
+          </label>
+          <label>
+            WhatsApp Number
+            <input type="tel" id="contactPhone" required />
+          </label>
+          <label>
+            Business Type
+            <input type="text" id="contactBusiness" placeholder="Property Dealer / Gym / Salon / Restaurant..." />
+          </label>
+          <label>
+            Message
+            <textarea id="contactMessage" rows="3" placeholder="Tell us what you want to automate..."></textarea>
+          </label>
+          <button type="submit" class="primary-btn full-width">
+            💬 Send on WhatsApp
+          </button>
+          <p class="mini-note">
+            This will open WhatsApp with your details pre-filled. Just tap <strong>Send</strong>.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© <span id="year"></span> FulxQR. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
